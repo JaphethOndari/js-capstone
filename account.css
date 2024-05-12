@@ -5,6 +5,13 @@
   }
   body{
     overflow-y: hidden;
+    display: flex;
+    flex-direction: row;
+    align-content: center;
+  }
+  .bdy{
+    display: flex;
+    width: 100%;
   }
   nav {
     width: 30%;
@@ -103,65 +110,35 @@ body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
+    background-color: #06090f; /* Darkest shade of blue */
+    color: #ffffff; /* White text */
 }
 
 .container {
     max-width: 600px;
     margin: 50px auto;
     padding: 20px;
-    background-color: #f9f9f9;
+    background-color: #0a141e; /* Slightly lighter shade of blue */
     border-radius: 8px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    height: fit-content;
 }
 
 h1 {
     text-align: center;
 }
 
-form input, form button {
-    display: block;
-    margin-bottom: 10px;
-    width: 100%;
-    padding: 8px;
-    box-sizing: border-box;
+.account-info {
+    padding: 20px;
+    border: 1px solid #ffffff; /* White border */
+    border-radius: 8px;
 }
 
-form button {
-    background-color: #007bff;
-    color: white;
-    border: none;
-    cursor: pointer;
+.account-info p {
+    margin: 10px 0;
 }
 
-form button:hover {
-    background-color: #0056b3;
-}
-
-ul {
-    list-style-type: none;
-    padding: 0;
-}
-
-.todo-item {
-    background-color: #f0f0f0;
-    padding: 10px;
-    margin-bottom: 5px;
-    border-radius: 5px;
-}
-
-.todo-item span {
+.account-info p strong {
     font-weight: bold;
 }
-
-.todo-item button {
-    background-color: #dc3545;
-    color: white;
-    border: none;
-    padding: 5px 10px;
-    cursor: pointer;
-    float: right;
-}
-
-.todo-item button:hover {
-    background-color: #c82333;
-}
+   

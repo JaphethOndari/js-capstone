@@ -6,6 +6,15 @@ document.addEventListener('DOMContentLoaded', function() {
       });
     });
   });
+
+  const realTime = document.getElementsByClassName("time")[0]
+setInterval(() => {
+  
+  const d = new Date()
+realTime.innerHTML = d.toLocaleTimeString()
+},1000)
+  
+
   
 
   const navBar = document.getElementById('input');

@@ -115,6 +115,8 @@ body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
+    display: flex;
+    flex-direction: column;
   }
   
   header, footer, nav {
@@ -218,8 +220,14 @@ body {
   }
   .bdy{
     display: flex;
-    height: 93dvh;
+    height: 85dvh;
     width: 100%;
+    flex-direction: column;
+    background-image: url(imgs/Norfolk\ Hotel\ in\ Kenya\ _\ Gamewatchers\ Safaris.jpeg);
+    background-repeat: no-repeat;
+    /* position: fixed; */
+    background-position: center;
+    background-size: cover;
     
   }
   .cd1{
@@ -385,6 +393,10 @@ h5{
   display: flex;
   align-items: center;
   justify-content: center;
-  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-  font-size: 150%;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 200%;
+  height: 75dvh;
+  font-weight: bolder;
+  color: #fff;
+
 }

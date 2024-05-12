@@ -94,14 +94,27 @@
     </a>
   </div>
   <div class="container">
-    <h1>Mechanics Phone Book</h1>
+    <h1>Resource Information</h1>
     <form id="mechanic-form">
         <input type="text" id="name" placeholder="Name" required>
         <input type="tel" id="phone" placeholder="Phone" required>
         <input type="text" id="specialty" placeholder="Specialty" required>
-        <button type="submit">Add Mechanic</button>
+        <button type="submit">Add Resource</button>
     </form>
-    <div id="mechanic-list"></div>
+    <div id="mechanic-list">
+      <table>
+        <tr>
+          <th>name<th/>
+          <th>phone<th/>
+          <th>specialty<th/>
+        <tr/>
+        <tr>
+          <td class="tname"></td>
+          <td class="tphone"></td>
+          <td class="tspecialty"></td>
+        </tr>
+      </table>
+    </div>
 </div>
 <script src="resources.js"></script>
 </body>

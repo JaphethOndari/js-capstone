@@ -8,19 +8,25 @@ body {
     height: 100vh;
     background-color: #f0f0f0; 
     display: flex;
+    width: 100%;
 }
 
 .this{
     align-items: center;
     justify-content: center;
     display: flex;
+    height: 100dvh;
+    width: 100%;
+    padding: 5%;
     
 }
 .container {
-    width: 800px;
+    width: 100%;
     background-color: #fff;
     border-radius: 10px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    height: 70dvh;
+    
 }
 
 .header {
@@ -28,7 +34,7 @@ body {
     justify-content: space-between;
     align-items: center;
     padding: 15px;
-    background-color: #00a0e5;
+    background-color: #333;
     color: #fff;
     border-top-left-radius: 10px;
     border-top-right-radius: 10px;

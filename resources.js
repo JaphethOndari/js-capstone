@@ -5,6 +5,7 @@ document.addEventListener('DOMContentLoaded', function() {
     form.addEventListener('submit', function(event) {
         event.preventDefault();
         
+        mechanicList.style.display = "flex"
         const name = document.getElementById('name').value;
         const phone = document.getElementById('phone').value;
         const specialty = document.getElementById('specialty').value;
@@ -17,17 +18,30 @@ document.addEventListener('DOMContentLoaded', function() {
         }
     });
 
-    function addMechanic(name, phone, specialty) {
-        const mechanicItem = document.createElement('div');
-        mechanicItem.classList.add('mechanic-item');
-        mechanicItem.innerHTML = `<li>
-            <h3>${name}</h3>
-            <p>Phone: ${phone}</p>
-            <p>Specialty: ${specialty}</p>
-            <li/>
-        `;
-        mechanicList.appendChild(mechanicItem);
-    }
+function addMechanic(name, phone, specialty) {
+    const mechanicItem = document.createElement('div');
+    mechanicItem.classList.add('mechanic-item');
+    mechanicItem.innerHTML = `
+        <table>
+            <thead>
+                <tr>
+                    <th>Name</th>
+                    <th>Contact</th>
+                    <th>Specialty</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>${name}</td>
+                    <td>${phone}</td>
+                    <td>${specialty}</td>
+                </tr>
+            </tbody>
+        </table>
+    `;
+    mechanicList.appendChild(mechanicItem);
+}
+
 });
 
 const navBar = document.getElementById('input');
